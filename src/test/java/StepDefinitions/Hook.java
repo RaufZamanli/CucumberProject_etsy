@@ -11,7 +11,7 @@ public class Hook {
     @After  // run after every scenario
 
     public void after(Scenario scenario){
-        System.out.println("Senaryo bitti");
+        System.out.println("End of Scenario");
 
 
 
