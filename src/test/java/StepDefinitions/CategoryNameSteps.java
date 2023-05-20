@@ -48,7 +48,7 @@ public class CategoryNameSteps {
 
         while (count<=20){
 
-            if (pm.shirts.get(count).getText().toLowerCase().contains(category))
+            if (pm.displayedItems.get(count).getText().toLowerCase().contains(category))
                 count++;
         }
 

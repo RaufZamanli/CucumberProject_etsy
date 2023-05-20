@@ -25,6 +25,31 @@ public class POM extends Parent{
     @FindBy(id = "catnav-l4-10938")
     public WebElement shirtsSection;
 
-    @FindBy(xpath = "//div[@class='wt-bg-white wt-display-block wt-pb-xs-2 wt-mt-xs-0']//h3[contains(text(),'Shirt') or contains(text(),'shirt')]")
-    public List<WebElement> shirts;
+    @FindBy(xpath = "//div[@class='wt-bg-white wt-display-block wt-pb-xs-2 wt-mt-xs-0']//h3")
+    public List<WebElement> displayedItems;
+
+    @FindBy(id = "global-enhancements-search-query")
+    public WebElement searchBox;
+
+    @FindBy(css = "[data-id='gnav-search-submit-button']")
+    public WebElement searchBtn;
+
+    @FindBy(xpath = "//button[contains(text(),'Add to cart')]")
+    public WebElement addToCart;
+
+    @FindBy(css = "[data-selector='post-atc-overlay-go-to-cart-button']")
+    public WebElement viewCart;
+
+    @FindBy(xpath = "//h1[text()='1 item in your cart']")
+    public WebElement itemNumber;
+
+    public WebElement getWebElement(String button){
+
+        switch (button){
+            case "searchBox": return searchBox;
+            case "addToCart": return addToCart;
+
+        }
+        return null;
+    }
 }
