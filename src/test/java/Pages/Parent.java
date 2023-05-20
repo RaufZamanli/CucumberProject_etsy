@@ -12,7 +12,7 @@ import org.testng.Assert;
 import java.time.Duration;
 
 public class Parent {
-    WebDriverWait wait=new WebDriverWait(GWD.getDriver(), Duration.ofSeconds(500));
+    WebDriverWait wait=new WebDriverWait(GWD.getDriver(), Duration.ofSeconds(20));
 
     public void sendKeysFunction(WebElement element, String yazi)
     {
