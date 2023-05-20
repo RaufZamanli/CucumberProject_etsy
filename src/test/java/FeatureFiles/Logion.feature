@@ -1,8 +1,5 @@
-Feature: Login functionality
+Feature: Navigate to Website
 
-  Scenario: Login with valid username and password
-    Given Navigate to web site
-    When Click on sign in button
-    And  User enters valid credentials to username and password
-    And  User clicks on sign in button
-    Then Verify that user should logged in successfully
+  Scenario: Navigate to Etsy
+    When Navigate to etsy
+    Then verify that main page has successfully been opened
