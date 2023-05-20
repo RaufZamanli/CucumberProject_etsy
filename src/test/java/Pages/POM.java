@@ -27,4 +27,13 @@ public class POM extends Parent{
 
     @FindBy(xpath = "//div[@class='wt-bg-white wt-display-block wt-pb-xs-2 wt-mt-xs-0']//h3[contains(text(),'Shirt') or contains(text(),'shirt')]")
     public List<WebElement> shirts;
+
+    @FindBy(id = "global-enhancements-search-query")
+    public WebElement searchBox;
+
+    @FindBy(xpath = "(//button[@type='submit'])[1]")
+    public WebElement searchButton;
+
+    @FindBy(xpath = "//h3[contains(text(),'Necklace')]")
+    public WebElement necklace;
 }
