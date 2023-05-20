@@ -43,6 +43,9 @@ public class POM extends Parent{
     @FindBy(xpath = "//h1[text()='1 item in your cart']")
     public WebElement itemNumber;
 
+    @FindBy(xpath = "//h3[contains(text(),'Necklace')]")
+    public WebElement necklace;
+
     public WebElement getWebElement(String button){
 
         switch (button){
