@@ -23,6 +23,7 @@ public class GWD {
 
         if (driver==null) {
             driver = new ChromeDriver();
+            driver.manage().window().maximize();
         }
 
         return driver;
